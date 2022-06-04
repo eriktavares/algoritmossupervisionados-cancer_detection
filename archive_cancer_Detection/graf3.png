@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="area_worst <= 884.55\nentropy = 0.955\nsamples = 426\nvalue = [266, 160]\nclass = B", fillcolor="#f5cdb0"] ;
+1 [label="concave points_worst <= 0.136\nentropy = 0.469\nsamples = 290\nvalue = [261, 29]\nclass = B", fillcolor="#e88f4f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="texture_mean <= 21.415\nentropy = 0.183\nsamples = 253\nvalue = [246, 7]\nclass = B", fillcolor="#e6853f"] ;
+1 -> 2 ;
+3 [label="entropy = 0.044\nsamples = 209\nvalue = [208, 1]\nclass = B", fillcolor="#e5823a"] ;
+2 -> 3 ;
+4 [label="entropy = 0.575\nsamples = 44\nvalue = [38, 6]\nclass = B", fillcolor="#e99558"] ;
+2 -> 4 ;
+5 [label="texture_worst <= 26.9\nentropy = 0.974\nsamples = 37\nvalue = [15, 22]\nclass = M", fillcolor="#c0e0f7"] ;
+1 -> 5 ;
+6 [label="entropy = 0.863\nsamples = 21\nvalue = [15, 6]\nclass = B", fillcolor="#efb388"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 16\nvalue = [0, 16]\nclass = M", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="concavity_mean <= 0.072\nentropy = 0.227\nsamples = 136\nvalue = [5, 131]\nclass = M", fillcolor="#41a1e6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="texture_mean <= 18.835\nentropy = 0.961\nsamples = 13\nvalue = [5, 8]\nclass = M", fillcolor="#b5daf5"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 5\nvalue = [5, 0]\nclass = B", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 8\nvalue = [0, 8]\nclass = M", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 123\nvalue = [0, 123]\nclass = M", fillcolor="#399de5"] ;
+8 -> 12 ;
+}
